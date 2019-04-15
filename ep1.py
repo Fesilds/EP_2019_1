@@ -1,8 +1,8 @@
 # EP 2019-1: Escape Insper
 #
 # Alunos: 
-# - aluno A: Fulano da Silva, fulanos@insper.edu.br
-# - aluno B: Sicrano de Almeida, sicranoa1@insper.edu.br
+# - aluno A: Felipe Junqueira, felipejm2@al.insper.edu.br
+# - aluno B: Enzo Neto, sicranoa1@insper.edu.br
 
 def carregar_cenarios():
     cenarios = {
@@ -59,9 +59,14 @@ def main():
     while not game_over:
         cenario_atual = cenarios[nome_cenario_atual]
 
-        # Aluno A: substitua este comentário pelo código para imprimir 
-        # o cenário atual.
-
+    print("Porta do Insper")
+    print("---------------")
+    print()
+    print("O medo de ir pedir ao professor que adie o EP é muito grande"
+          "Mas você sente a determinação no seu coração e toma o primeiro passo"
+          "É só entrar na porta e começar sua aventura!"
+    print()      
+       
         opcoes = cenario_atual['opcoes']
         if len(opcoes) == 0:
             print("Acabaram-se suas opções! Mwo mwo mwooooo...")
