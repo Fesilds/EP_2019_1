@@ -65,6 +65,7 @@ def main():
     print("O medo de ir pedir ao professor que adie o EP é muito grande"
           "Mas você sente a determinação no seu coração e toma o primeiro passo"
           "É só entrar na porta e começar sua aventura!"
+          "Ou não, sei lá..."
     print()      
        
         opcoes = cenario_atual['opcoes']
