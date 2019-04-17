@@ -4,17 +4,16 @@ Created on Tue Apr 16 14:19:57 2019
 
 @author: felip
 """
-nome = input("Como você se chama?")
 nome = {}
-nome["Vida"]= 10
-nome["Ataque"] = 1
+nome['vida']= 10
+nome['ataque'] = 1
 inventario_nome= []
-print (nome)
 for e in inventario_nome:
     if e == ("livro de cálculo"):
-        nome["Ataque"]+=2
-    elif e == ("kit Bixo"):
-        nome["Ataque"]+= 5
-        nome["Vida"]+= 5
-
+        nome['ataque']+=2
+    elif e == ('kit Bixo'):
+        nome['ataque']+= 5
+        nome['vida']+= 5
+if a == ("Inventario") or a == ("inventario"):
+    print(inventario_nome)
     

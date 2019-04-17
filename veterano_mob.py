@@ -6,9 +6,9 @@ Created on Tue Apr 16 14:30:46 2019
 """
 import random 
 #Monstro 
-Veterano = {}
-Veterano["Vida"] = 20
-Veterano["Ataque"] = 5
+veterano = {}
+veterano['vida'] = 20
+veterano['ataque'] = 5
 inventario_do_veterano = []
     
 a = random.randint(1,20)
