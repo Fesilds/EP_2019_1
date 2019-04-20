@@ -24,7 +24,7 @@ a = random.randint(1,20)
 if ((a/3) == 0):
     inventario_do_veterano.append("livro de cálculo")
 elif a== 10:
-    inventario_do_veterano.aapend("Kit Bixo")
+    inventario_do_veterano.append("Kit Bixo")
 
 def carregar_cenarios():
     cenarios = {
