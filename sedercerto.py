@@ -31,24 +31,25 @@ print("Porta do Insper"
       "Voce esta na porta "
       "de entrada do Insper")
 while game_on == True:
-    opcoes = input("Para aonde deseja ir?")
+    opcoes = input("Deseja entrar?")
 
-    if opcoes == "Saguao":
+    if opcoes == "Saguao" or opcoes == "Sim":
             print("Saguao")
             print( "-------")
-            print("Voce entrou no Insper e esta no saguao")
+            print("Voce entrou no Insper e esta no saguao,"
+                  "e ve a biblioteca e o elevador." )
             opcoes = input("Para aonde deseja ir?")
     if opcoes == "Biblioteca":
-        print("Biblioteca"
-              "----------"
-              "Voce chegou a Biblioteca do Insper"
+        print("Biblioteca")
+        print("----------")
+        print("Voce chegou a Biblioteca do Insper"
               "lá você pode procurar por um livro"
               "para saber mais sobre o EP, ir para"
               "um aquario tentar fazer o EP ou voltar"
               "para o Saguao,")
         opcoes = input("Para aonde deseja ir: Procurar um livro,"
                        "Aquario, ou Saguao?")
-        if opcoes != "Procurar um livro" or "Aquario" or "Saguao":
+        if opcoes != "Procurar um livro" or opcoes != "Aquario" or opcoes != "Saguao":
             print("Opcao invalida, digite novamente")
             opcoes = input("Para aonde deseja ir: Procurar um livro,"
                        "Aquario, ou Saguao?")
@@ -58,6 +59,10 @@ while game_on == True:
               "-------"
               "Voce encontrou sua chave do armario")
         inventario_nome.append("chave do armario")
+    if opcoes == "Elevador":
+        opcoes = input("Você entrou no elevador, para qual andar deseja ir:"
+              "1 andar/ 2andar/ 3 andar/ 4 andar/ sair do elevador ?")
+        
     if opcoes == "1 andar":
         print("1 andar"
               "--------"
@@ -71,4 +76,8 @@ while game_on == True:
                 print("Você ganhou do veterano, confira seu inventario" 
                       "para ver se você ganhou algum item especial")
             elif nome['vida'] == 0:
-                print("Você perdeu")
+                print("Você morreu!")
+                print("------------")
+                print(" GAME OVER  ")
+    break
+
